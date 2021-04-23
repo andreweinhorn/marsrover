@@ -1,3 +1,5 @@
+import sys
+
 ## A class to record the coordinates and direction of a rover
 class Rover:
     def __init__(self, x, y, dir):
@@ -27,7 +29,7 @@ def valid_location(location):
 
     # Check that there are exactly three arguments in the location
     if(len(location) != 3):
-        print("Location input should contain three arguments separated by spaces.")
+        print("Invalid Location: Location input should contain three arguments separated by spaces.")
         return False
     location_x = location[0]
     location_y = location[1]
@@ -35,78 +37,78 @@ def valid_location(location):
 
     # Check that the first two arguments are digits
     if not (location_x.isdigit() and location_y.isdigit()):
-        print("Location values should be integers")
+        print("Invalid Location: Location values should be integers")
         return False
 
     # Check that the final argument is a cardinal direction
-    if direction.lower() not in ['n', 'e', 's', 'w']:
-        print("Location does not contain a valid direction")
+    if direction not in ['N', 'E', 'S', 'W']:
+        print("Invalid Location: Location does not contain a valid direction")
         return False
 
     return True
 
 ## A function to test the validity of the instructions input
 def valid_instructions(instructions):
-    for item in instructions:
-        if item.lower() not in ['l', 'r', 'm']:
-            print("Instruction should be L, R or M.  {} received.".format(item))
+    for instruction in instructions:
+        if instruction not in ['L', 'R', 'M']:
+            print("Invalid Instruction: Instruction should be L, R or M.  {} received.".format(instruction))
             return False
     return True
 
 
-## An array that will contain the tuples of rover locations and instructions
-inputs = []
+def destination(textfile):
+    ## An array that will contain the tuples of rover locations and instructions
+    inputs = []
 
-## Open the input file
-with open('test-input.txt', 'r') as f:
+    ## Open the input file
+    with open(textfile, 'r') as f:
 
-    ## Grab the maximum x and y values for the plateau
-    plateau = f.readline().rstrip('\n').split(' ')
+        ## Grab the maximum x and y values for the plateau
+        plateau = f.readline().rstrip('\n').split(' ')
 
-    plateau_x = int(plateau[0])
-    plateau_y = int(plateau[1])
+        plateau_x = int(plateau[0])
+        plateau_y = int(plateau[1])
 
-    ## Grab the location and instructions for the rovers and check they are valid
-    while True:
+        ## Grab the location and instructions for the rovers and check they are valid
+        while True:
 
-        # Check if we have reached the end of the file
-        location = f.readline()
-        if(len(location) == 0): break
+            # Check if we have reached the end of the file
+            location = f.readline()
+            if(len(location) == 0): break
 
-        # Grab the location of the rover
-        location = location.rstrip('\n').split(' ')
+            # Grab the location of the rover
+            location = location.rstrip('\n').split(' ')
 
-        # Grab the instructions for that rover
-        instructions = list(f.readline().rstrip('\n'))
+            # Grab the instructions for that rover
+            instructions = list(f.readline().rstrip('\n'))
 
-        # Check the validity of the location and instructions
-        if valid_location(location) and valid_instructions(instructions):
-            inputs.append([location, instructions])
-        else:
-            print("Invalid location and/or instructions")
-            break
+            # Check the validity of the location and instructions
+            if valid_location(location) and valid_instructions(instructions):
+                inputs.append([location, instructions])
 
-for item in inputs:
-    location = item[0]
-    instructions = item[1]
-    rover = Rover(int(location[0]), int(location[1]), location[2])
-    rover_safe = True
+    for item in inputs:
+        location = item[0]
+        instructions = item[1]
+        rover = Rover(int(location[0]), int(location[1]), location[2])
+        rover_safe = True
 
-    # Execute each instruction in sequence
-    for instruction in instructions:
-        if instruction == 'M': rover.move()
-        if instruction == 'L': rover.turn_left()
-        if instruction == 'R': rover.turn_right()
+        # Execute each instruction in sequence
+        for instruction in instructions:
+            if instruction == 'M': rover.move()
+            if instruction == 'L': rover.turn_left()
+            if instruction == 'R': rover.turn_right()
 
-        # If at any time the rover coordinates fall outside of the plateau, print error message
-        if rover.x < 0 or rover.x > plateau_x or rover.y < 0 or rover.y > plateau_y:
-            print("Oh no, your rover fell off the plateau!")
-            rover_safe = False
-            break
+            # If at any time the rover coordinates fall outside of the plateau, print error message
+            if rover.x < 0 or rover.x > plateau_x or rover.y < 0 or rover.y > plateau_y:
+                print("Oh no, your rover fell off the plateau!")
+                rover_safe = False
+                break
 
-    # Print the rover's final position
-    if(rover_safe):
-        rover.position()
+        # Print the rover's final position
+        if(rover_safe):
+            rover.position()
 
-
+if __name__ == "__main__":
+    textfile = sys.argv[1]
+    destination(textfile)
 
