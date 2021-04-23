@@ -1,8 +1,0 @@
-Test cases:
-
-What if there are empty lines between each line in the instruction file?
-What if the user does not provide integers for the plateau coordinates
-What if location does not match integer, integer, NSEW
-What if instructions contain letters other than LRM
-What if the user leaves blank lines in input
-Check that the plateau coordinates are valid
