@@ -4,7 +4,7 @@ Given the extent of the martian plateau, the starting location and set of moveme
 
 Command Line Usage:
 
-python marsrover.py test-input-1.txt
+    python marsrover.py test-input-1.txt
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
@@ -72,7 +72,7 @@ This indicates that the first rover ended up at coordinates (6,0) and was facing
 
 Unit tests are compiled using Python's unittest module and are contained in  test_marsrover.py  The unit tests should be run from the command line as follows:
 
-python test_marsrover.py -b
+    python test_marsrover.py -b
 
 The -b flag suppresses print statements that usually occur with the calling of these functions.
 
@@ -90,8 +90,8 @@ The first function is the core function which converts the inputs into outputs. 
 
 Run the following two commands:
 
-python marsrover.py test-input-1.txt
-python marsrover.py test-input-2.txt
+    python marsrover.py test-input-1.txt
+    python marsrover.py test-input-2.txt
 
 Test input 1 is the test input provided by the Mars Rover assignment
 Test input 2 tests a number of regular cases, as well as errors in user inputs, to demonstrate how these errors are displayed to the user.
