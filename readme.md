@@ -4,7 +4,7 @@ Given the extent of the martian plateau, the starting location and set of moveme
 
 Command Line Usage:
 
-    python marsrover.py test-input-1.txt
+    python marsrover.py test_input_1.txt
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
@@ -16,7 +16,7 @@ Clone the mars rover repository using the following command from the command lin
 
 To check that the correct files have been downloaded, you can run:
 
-    python marsrover.py test-input-1.txt
+    python marsrover.py test_input_1.txt
 
 And you should receive the following output:
 
@@ -31,8 +31,8 @@ The following files should be present in the repository:
 
 marsrover.py  
 readme.txt  
-test-input-1.txt  
-test-input-2.txt  
+test_input_1.txt  
+test_input_2.txt  
 test_marsrover.py  
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
@@ -90,8 +90,8 @@ The first function is the core function which converts the inputs into outputs. 
 
 Run the following two commands:
 
-    python marsrover.py test-input-1.txt
-    python marsrover.py test-input-2.txt
+    python marsrover.py test_input_1.txt
+    python marsrover.py test_input_2.txt
 
 Test input 1 is the test input provided by the Mars Rover assignment
 Test input 2 tests a number of regular cases, as well as errors in user inputs, to demonstrate how these errors are displayed to the user.
