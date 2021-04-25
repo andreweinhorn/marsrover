@@ -12,16 +12,16 @@ Command Line Usage:
 
 Clone the mars rover repository using the following command from the command line:
 
-git clone https://github.com/andreweinhorn/marsrover.git .
+    git clone https://github.com/andreweinhorn/marsrover.git .
 
 To check that the correct files have been downloaded, you can run:
 
-python marsrover.py test-input-1.txt
+    python marsrover.py test-input-1.txt
 
 And you should receive the following output:
 
-1 3 N
-5 1 E
+1 3 N  
+5 1 E  
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
@@ -29,11 +29,11 @@ And you should receive the following output:
 
 The following files should be present in the repository:
 
-marsrover.py
-readme.txt
-test-input-1.txt
-test-input-2.txt
-test_marsrover.py
+marsrover.py  
+readme.txt  
+test-input-1.txt  
+test-input-2.txt  
+test_marsrover.py  
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
@@ -41,12 +41,12 @@ test_marsrover.py
 
 The marsrover script expects input in the form of a text file following a specific format.
 
-Example Input File:
-7 7
-2 3 E
-MMMRMLMRMM
-6 6 W
-MMLMMLMMRM
+Example Input File:  
+7 7  
+2 3 E  
+MMMRMLMRMM  
+6 6 W  
+MMLMMLMMRM  
 
 The meaning of these inputs is contained in the Problem Statement provided below.
 
@@ -61,8 +61,8 @@ Assumptions:
 
 marsrover.py prints a list of final locations of the rovers specified in the input file.  In the example above, the output is as follows:
 
-6 0 S
-6 3 S
+6 0 S  
+6 3 S  
 
 This indicates that the first rover ended up at coordinates (6,0) and was facing South, while the second rover ended up at coordinates (6,3) facing South.
 
