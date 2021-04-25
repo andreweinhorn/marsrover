@@ -6,7 +6,7 @@ Command Line Usage:
 
 python marsrover.py test-input-1.txt
 
-########################################################################################
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
 2.  INSTALLATION
 
@@ -23,7 +23,7 @@ And you should receive the following output:
 1 3 N
 5 1 E
 
-########################################################################################
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
 3.  FILE MANIFEST
 
@@ -35,7 +35,7 @@ test-input-1.txt
 test-input-2.txt
 test_marsrover.py
 
-########################################################################################
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
 4.  INPUT FILE
 
@@ -55,8 +55,7 @@ Assumptions:
 2.  Plateau and rover coordinates are separated by spaces
 3.  Direction inputs are capitalized (i.e. M, R, L as opposed to m, r, l)
 
-
-########################################################################################
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
 5.  OUTPUT
 
@@ -67,7 +66,7 @@ marsrover.py prints a list of final locations of the rovers specified in the inp
 
 This indicates that the first rover ended up at coordinates (6,0) and was facing South, while the second rover ended up at coordinates (6,3) facing South.
 
-########################################################################################
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
 6.  TEST SUITE
 
@@ -85,7 +84,7 @@ These unit tests check various standard and edge cases for the following functio
 
 The first function is the core function which converts the inputs into outputs.  The latter two functions check the user input and print descriptive messages should the input text file contain errors.
 
-########################################################################################
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
 7.  DEMONSTRATING FUNCTION
 
@@ -97,7 +96,7 @@ python marsrover.py test-input-2.txt
 Test input 1 is the test input provided by the Mars Rover assignment
 Test input 2 tests a number of regular cases, as well as errors in user inputs, to demonstrate how these errors are displayed to the user.
 
-########################################################################################
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
 8.  PROBLEM STATEMENT (courtesy of Google)
 
