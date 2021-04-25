@@ -40,7 +40,6 @@ test_marsrover.py
 4.  INPUT FILE
 
 The marsrover script expects input in the form of a text file following a specific format.
-NB.  There should be no empty lines in the input files!
 
 Example Input File:
 7 7
@@ -50,6 +49,12 @@ MMMRMLMRMM
 MMLMMLMMRM
 
 The meaning of these inputs is contained in the Problem Statement provided below.
+
+Assumptions:  
+1.  The input text file contains no blank lines
+2.  Plateau and rover coordinates are separated by spaces
+3.  Direction inputs are capitalized (i.e. M, R, L as opposed to m, r, l)
+
 
 ########################################################################################
 
