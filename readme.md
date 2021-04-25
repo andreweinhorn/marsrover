@@ -1,4 +1,4 @@
-## 1.  OVERVIEW
+### 1.  OVERVIEW
 
 Given the extent of the martian plateau, the starting location and set of movement instructions for a set of rovers, marsrover.py computes the final destinations of these rovers.
 
@@ -8,7 +8,7 @@ Command Line Usage:
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
-## 2.  INSTALLATION
+### 2.  INSTALLATION
 
 Clone the mars rover repository using the following command from the command line:
 
@@ -25,7 +25,7 @@ And you should receive the following output:
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
-## 3.  FILE MANIFEST
+### 3.  FILE MANIFEST
 
 The following files should be present in the repository:
 
@@ -37,7 +37,7 @@ test_marsrover.py
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
-## 4.  INPUT FILE
+### 4.  INPUT FILE
 
 The marsrover script expects input in the form of a text file following a specific format.
 
@@ -57,18 +57,18 @@ Assumptions:
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
-## 5.  OUTPUT
+### 5.  OUTPUT
 
-marsrover.py prints a list of final locations of the rovers specified in the input file.  In the example above, the output is as follows:
+marsrover.py prints a list of final locations of the rovers specified in the input file.  For the test cases provided in the assignment (test_input_1.txt) the output is as follows:
 
-6 0 S  
-6 3 S  
+1 3 N  
+5 1 E  
 
-This indicates that the first rover ended up at coordinates (6,0) and was facing South, while the second rover ended up at coordinates (6,3) facing South.
+This indicates that the first rover ended up at coordinates (1,3) and was facing North, while the second rover ended up at coordinates (5,1) facing East.
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
-## 6.  TEST SUITE
+### 6.  TEST SUITE
 
 Unit tests are compiled using Python's unittest module and are contained in  test_marsrover.py  The unit tests should be run from the command line as follows:
 
@@ -86,7 +86,7 @@ The first function is the core function which converts the inputs into outputs. 
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
-## 7.  DEMONSTRATING FUNCTION
+### 7.  DEMONSTRATING FUNCTION
 
 Run the following two commands:
 
@@ -98,7 +98,7 @@ Test input 2 tests a number of regular cases, as well as errors in user inputs, 
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  
 
-## 8.  PROBLEM STATEMENT (courtesy of Google)
+### 8.  PROBLEM STATEMENT (courtesy of Google)
 
 MARS ROVERS
 
