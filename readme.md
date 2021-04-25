@@ -82,7 +82,19 @@ The first function is the core function which converts the inputs into outputs. 
 
 ########################################################################################
 
-7.  PROBLEM STATEMENT (courtesy of Google)
+7.  DEMONSTRATING FUNCTION
+
+Run the following two commands:
+
+python marsrover.py test-input-1.txt
+python marsrover.py test-input-2.txt
+
+Test input 1 is the test input provided by the Mars Rover assignment
+Test input 2 tests a number of regular cases, as well as errors in user inputs, to demonstrate how these errors are displayed to the user.
+
+########################################################################################
+
+8.  PROBLEM STATEMENT (courtesy of Google)
 
 MARS ROVERS
 

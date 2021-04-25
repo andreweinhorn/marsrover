@@ -88,10 +88,10 @@ def handle_input(textfile):
     ## Open the input file
     with open(textfile, 'r') as f:
 
-        ## Grab the maximum x and y values for the plateau
+        ## Get the maximum x and y values for the plateau
         plateau = f.readline().rstrip('\n').split(' ')
 
-        ## Grab the location and instructions for the rovers and check they are valid
+        ## Get the location and instructions for the rovers and check they are valid
         while True:
 
             # Check if we have reached the end of the file
@@ -106,10 +106,13 @@ def handle_input(textfile):
 
             # If location and instructions are valid, compute the destination
             if valid_location(location) and valid_instructions(instructions):
-                destination(location, instructions, plateau)
+                result = destination(location, instructions, plateau)
 
 
 if __name__ == "__main__":
-    textfile = sys.argv[1]
-    handle_input(textfile)
+    if(len(sys.argv) != 2):
+        print("Input Error: marsrover.py requires you to specify an input text file")
+    else:
+        textfile = sys.argv[1]
+        handle_input(textfile)
 
