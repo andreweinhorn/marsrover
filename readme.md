@@ -114,7 +114,7 @@ In order to control a rover, NASA sends a simple string of letters. The possible
 
 Assume that the square directly North from (x, y) is (x, y+1).
 
-_*Input:*_
+_Input:_
 
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 
@@ -124,7 +124,7 @@ The position is made up of two integers and a letter separated by spaces, corres
 
 Each rover will be finished sequentially, which means that the second rover won't start to move until the first one has finished moving.
 
-_*Output:*_
+_Output:_
 
 The output for each rover should be its final co-ordinates and heading.
 
