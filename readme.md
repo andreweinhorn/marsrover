@@ -100,7 +100,7 @@ Test input 2 tests a number of regular cases, as well as errors in user inputs, 
 
 ### 8.  PROBLEM STATEMENT (courtesy of Google)
 
-MARS ROVERS
+**MARS ROVERS**
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars.
 
@@ -114,7 +114,7 @@ In order to control a rover, NASA sends a simple string of letters. The possible
 
 Assume that the square directly North from (x, y) is (x, y+1).
 
-Input:
+*Input:*
 
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 
@@ -124,7 +124,7 @@ The position is made up of two integers and a letter separated by spaces, corres
 
 Each rover will be finished sequentially, which means that the second rover won't start to move until the first one has finished moving.
 
-Output:
+*Output:*
 
 The output for each rover should be its final co-ordinates and heading.
 
